@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Andrew0502/my-budget-tracker-online-offline"
+    "url": "git+https://github.com/Andrew0502/my-budget-tracker-online-offline.git"
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +24,7 @@
     "lite-server": "^2.5.3",
     "mongoose": "^5.5.15",
     "morgan": "^1.9.1"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
