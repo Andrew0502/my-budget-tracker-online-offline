@@ -22,6 +22,17 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useFindAndModify: false
 });
 
+// mongoose connected successfully 
+const connection = mongoose.connection;
+connection.on("connected", () => {
+  console.log("Mongoose successfully connected.");
+});
+
+// Logs if there is an error on connection
+connection.on("error", (err) => {
+  console.log("Mongoose connection error: ", err);
+});
+
 // routes
 app.use(require("./routes/api.js"));
 
